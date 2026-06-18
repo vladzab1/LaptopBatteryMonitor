@@ -1,0 +1,10 @@
+[Unit]
+Description=Run battery sender every 5 seconds
+
+[Timer]
+OnBootSec=5s
+OnUnitActiveSec=5s
+AccuracySec=1ms
+
+[Install]
+WantedBy=timers.target

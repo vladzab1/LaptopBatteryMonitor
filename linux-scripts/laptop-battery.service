@@ -1,0 +1,7 @@
+[Unit]
+Description=Send laptop battery status to phone
+
+[Service]
+Type=oneshot
+Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+ExecStart=/home/vladosik/.local/bin/send_battery.sh
